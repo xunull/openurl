@@ -3,7 +3,6 @@ package openurl
 import (
 	"bytes"
 	"errors"
-	"fmt"
 	"os/exec"
 	"runtime"
 )
@@ -16,7 +15,6 @@ const (
 
 func Open(url string) (error, string) {
 	platform := runtime.GOOS
-	fmt.Println(platform)
 
 	var command string
 
